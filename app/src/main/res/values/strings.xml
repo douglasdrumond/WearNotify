@@ -4,5 +4,7 @@
     <string name="app_name">WearNotify</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="show_notification">Mostrar notificação</string>
+    <string name="reply">Resposta:</string>
 
 </resources>
