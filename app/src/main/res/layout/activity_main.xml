@@ -6,17 +6,31 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button_notify"
+        android:id="@+id/button_notify_only"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/show_notification"/>
+        android:text="@string/show_notification_simple"/>
+
+    <Button
+        android:id="@+id/button_notify_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/show_notification_with_action"/>
+
+    <Button
+        android:id="@+id/button_notify_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/show_notification_with_reply"/>
 
     <TextView
         style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reply"/>
+        android:text="@string/reply_phone_label"/>
 
     <TextView
         android:id="@+id/textview_reply"
