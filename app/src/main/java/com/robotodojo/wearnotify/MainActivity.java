@@ -27,12 +27,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Button notifyOnlyButton = (Button) findViewById(R.id.button_notify_only);
         Button notifyReplyButton = (Button) findViewById(R.id.button_notify_reply);
         Button notifyActionButton = (Button) findViewById(R.id.button_notify_action);
+        Button clearAllButton = (Button) findViewById(R.id.button_clear_all);
 
         mReplyTextView = (TextView) findViewById(R.id.textview_reply);
 
         notifyOnlyButton.setOnClickListener(this);
         notifyReplyButton.setOnClickListener(this);
         notifyActionButton.setOnClickListener(this);
+        clearAllButton.setOnClickListener(this);
     }
 
     @Override
@@ -79,7 +81,17 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case R.id.button_notify_reply:
                 showReplyNotification();
                 break;
+            case R.id.button_clear_all:
+                clearAll();
+                break;
         }
+    }
+
+    private void clearAll() {
+        mReplyTextView.setText("");
+        NotificationManagerCompat notificationManager =
+                NotificationManagerCompat.from(this);
+        notificationManager.cancelAll();
     }
 
     private CharSequence getMessageTextFromWear(Intent intent) {

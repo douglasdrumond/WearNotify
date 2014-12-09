@@ -10,31 +10,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/show_notification_simple"/>
+        android:text="@string/show_notification_simple" />
 
     <Button
         android:id="@+id/button_notify_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/show_notification_with_action"/>
+        android:text="@string/show_notification_with_action" />
 
     <Button
         android:id="@+id/button_notify_reply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/show_notification_with_reply"/>
+        android:text="@string/show_notification_with_reply" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reply_phone_label"/>
+        android:text="@string/reply_phone_label" />
 
     <TextView
         android:id="@+id/textview_reply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Teste"/>
+        tools:text="Teste" />
+
+    <Button
+        android:id="@+id/button_clear_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear" />
 </LinearLayout>

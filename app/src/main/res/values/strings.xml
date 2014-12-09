@@ -9,5 +9,6 @@
     <string name="show_notification_with_reply">Mostrar notificação com resposta</string>
     <string name="reply_phone_label">Resposta:</string>
     <string name="reply_watch_label">Responder</string>
+    <string name="clear">Limpar</string>
 
 </resources>
